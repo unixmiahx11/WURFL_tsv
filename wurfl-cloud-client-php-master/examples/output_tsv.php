@@ -33,8 +33,8 @@ try {
 	// Show all the capabilities returned by the WURFL Cloud Service
 
 	// Print headers to output tsv file
-	//header('Content-type: text/tab-separated-values');
-	//header('Content-Disposition: attachment;filename=output.tsv');
+	header('Content-type: text/tab-separated-values');
+	header('Content-Disposition: attachment;filename=output.tsv');
 	echo $userAgent = $_SERVER['HTTP_USER_AGENT'];echo "\t";
 	
 	$dataSet = $client->capabilities;
