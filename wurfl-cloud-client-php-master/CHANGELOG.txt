@@ -1,0 +1,47 @@
+# Change log
+
+[2017-01-18] v2.1.1
+ - Bugfix: Non-default umasks no longer cause cache files to be written with wrong permissions
+
+[2016-10-27] v2.1.0
+ - Enhancement: Added full support for PHP 7
+ - Enhancement: Added support for APCu to the APC cache adapter
+ - Bugfix: Fsock adapter should use HTTP/1.0 to avoid chunked transfer encoding
+
+[2016-09-02] v2.0.4
+ - Enhancement: Added support for Google App Engine and documentation for using Cloud Storage for caching.
+ - Enhancement: Added `HttpClient\FileGetContents` for use without `curl` or `fsock`.
+ - Enhancement: Added support for Guzzle 6+ through new adapter `HttpClient\GuzzleHttp`.
+ - Enhancement: Added Docker test runner via `docker-compose`.
+ - Bugfix: CURL adapter would not use compression even with `use_compression = true`.
+
+[2015-06-15] v2.0.3
+ - Enhancement: Reduce PHP version constraint from 5.4 to 5.3.
+
+[2015-05-20] v2.0.2
+ - Enhancement: Open source cloud client.
+
+[2014-02-13] v2.0.1
+ - Bugfix: CURL adapter fails with multiple calls to Client::detectDevice()
+
+[2013-10-20] v2.0.0
+ - Client rewritten with namespaces
+ - Unit tests added for all classes
+ - Added support for Guzzle
+ - Added support for custom HTTP clients
+ - Added support for SOCKS and HTTP proxy servers  
+ - Added support for Composer
+ - Improved autoloading
+ - Bugfix: HTTP timeout is not honored
+ - Improved documentation
+
+[2012-04-02] v1.0.2
+ - Bugfix: Strict notices about abstract static methods
+ - Improved code examples
+ - Bugfix: Memcache connections are duplicated
+
+[2012-03-16] v1.0.1
+ - Bugfix: JSON warnings in PHP < 5.3
+
+[2011-12-21] v1.0.0
+ - Initial release
